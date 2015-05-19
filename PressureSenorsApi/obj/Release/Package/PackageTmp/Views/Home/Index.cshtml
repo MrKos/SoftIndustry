@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pressure sensor API</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    <div>
+        <h2>Pressure api data:</h2>
+        <ul id="counters"></ul>
+    </div>
+    
+    <script>
+        var uri = 'api/Sensor/get';
+
+        $(document).ready(function () {
+            // Send an AJAX request
+            $.getJSON(uri)
+                .done(function (data) {
+                    // On success, 'data' contains a list of counters
+                    $.each(data, function (key, item) {
+                        // Add a list item for the counters.
+                        $('<li>', { text: formatItem(item) }).appendTo($('#counters'));
+                    });
+                });
+        });
+
+        function formatItem(item) {
+            return item.Date + ' :   ' + item.Value;
+        }
+    </script>
+</body>
+</html>

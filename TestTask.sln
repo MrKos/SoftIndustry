@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{68F43FCB-2376-4836-A5CC-FEDDB82ED6EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{CB1AB617-ECF8-429F-9D09-AEAF22F270B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProviderService", "ProviderService\ProviderService.csproj", "{F9724999-394E-426F-B0F0-9C744D4FAC47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask.Common", "TestTask.Infrastructure\TestTask.Common.csproj", "{DEEAF67A-7D50-40F0-B0F6-572EC56B4CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{0C285E28-31B4-4E79-992F-451EA52C053B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataProviders", "DataProviders", "{B33D5AC9-5787-44F5-9AC5-B4623DF8792A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PressureSensorApi", "PressureSenorsApi\PressureSensorApi.csproj", "{B6D61FC1-55DF-422E-8EAD-E743146E1D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9724999-394E-426F-B0F0-9C744D4FAC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9724999-394E-426F-B0F0-9C744D4FAC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9724999-394E-426F-B0F0-9C744D4FAC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9724999-394E-426F-B0F0-9C744D4FAC47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEAF67A-7D50-40F0-B0F6-572EC56B4CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEAF67A-7D50-40F0-B0F6-572EC56B4CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEAF67A-7D50-40F0-B0F6-572EC56B4CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEAF67A-7D50-40F0-B0F6-572EC56B4CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C285E28-31B4-4E79-992F-451EA52C053B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C285E28-31B4-4E79-992F-451EA52C053B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C285E28-31B4-4E79-992F-451EA52C053B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C285E28-31B4-4E79-992F-451EA52C053B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D61FC1-55DF-422E-8EAD-E743146E1D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D61FC1-55DF-422E-8EAD-E743146E1D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D61FC1-55DF-422E-8EAD-E743146E1D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D61FC1-55DF-422E-8EAD-E743146E1D96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9724999-394E-426F-B0F0-9C744D4FAC47} = {68F43FCB-2376-4836-A5CC-FEDDB82ED6EF}
+		{0C285E28-31B4-4E79-992F-451EA52C053B} = {CB1AB617-ECF8-429F-9D09-AEAF22F270B3}
+		{B6D61FC1-55DF-422E-8EAD-E743146E1D96} = {B33D5AC9-5787-44F5-9AC5-B4623DF8792A}
+	EndGlobalSection
+EndGlobal

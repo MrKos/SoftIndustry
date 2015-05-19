@@ -1,0 +1,10 @@
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\bin\Release\TestTask.Common.dll.config
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\bin\Release\TestTask.Common.dll
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\bin\Release\TestTask.Common.pdb
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\bin\Release\EntityFramework.dll
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\bin\Release\EntityFramework.SqlServer.dll
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\bin\Release\EntityFramework.xml
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\bin\Release\EntityFramework.SqlServer.xml
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\obj\Release\TestTask.Common.csprojResolveAssemblyReference.cache
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\obj\Release\TestTask.Common.dll
+D:\Тестирование\NewProjects\TestTask\TestTask.Infrastructure\obj\Release\TestTask.Common.pdb

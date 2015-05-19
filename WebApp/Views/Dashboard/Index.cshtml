@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WebApp.Models.CounterDisplayModel>
+
+@{
+    ViewBag.Title = "Summary info";
+    var groups = Model.GroupBy(m => m.CounterType).ToList();
+}
+@section scripts{
+    <script type="text/javascript"
+            src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }">
+    </script>
+}
+
+
+<script type="text/javascript">
+    google.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        @foreach (var item in groups)
+        {
+            <text>
+        var data@(item.Key) = google.visualization.arrayToDataTable([
+        ['Date', '@item.Key']
+            @foreach (var count in item)
+            {
+                @:, ['@count.MessureDate', parseFloat(@count.CounterValue)]
+            }
+        ]);
+
+        // option for displaying chart
+        var options@(item.Key) = {
+            title: 'Line chart for @item.Key',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+        };
+
+        var chart@(item.Key) = new google.visualization.LineChart(document.getElementById('@item.Key'));
+
+        chart@(item.Key).draw(data@(item.Key), options@(item.Key));
+        </text>
+        }
+    }
+
+    $(function () {
+        $("#dateFrom").datepicker({ dateFormat: "mm-dd-yy" });
+        $("#dateTo").datepicker({ dateFormat: "mm-dd-yy" });
+    });
+
+
+</script>
+<br/>
+@using (Html.BeginForm("Index", "Dashboard", FormMethod.Get))
+{
+    @Html.DropDownList("counterType", "All")
+    <input id="dateFrom" type="date" value="@ViewBag.dateFrom" name="dateFrom">
+    <input id="dateTo" type="date" value="@ViewBag.dateTo" name="dateTo">
+    <input type="submit" value="Filter" />
+}
+
+@foreach (var item in groups)
+{
+    <div id="@item.Key" style="width: 900px; height: 500px"></div>
+}
